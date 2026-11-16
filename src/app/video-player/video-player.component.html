@@ -1,0 +1,40 @@
+
+<div class="media">
+  <video
+    #ninjaVideo
+    controls
+    preload="none"
+    poster="/imatges/naruto.webp"
+  >
+    <source data-format="webm" type="video/webm" />
+    <source data-format="mp4" type="video/mp4" />
+
+    <track
+      kind="captions"
+      src="/video/entrenament-ca.vtt"
+      srclang="ca"
+      label="Català"
+      default
+    />
+
+    El teu navegador no admet vídeos HTML5.
+  </video>
+
+  <p>
+    <strong>Entrenament ninja</strong> · vídeo original de demostració,
+    amb subtítols en català.
+  </p>
+
+  <p class="note">
+    Font de vídeo assignada:
+    <strong>
+      {{
+        videoVisible
+          ? "sí, element visible"
+          : "no, pendent de visibilitat"
+      }}
+    </strong>.
+    L'atribut preload="none" és una indicació,
+    no una garantia de zero descàrregues.
+  </p>
+</div>
